@@ -1,1 +1,2 @@
-# IITI-Website-Home-Page
+# IITIWebsite
+This is repository for developing IITI Website for Programming Club Competition.

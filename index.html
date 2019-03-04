@@ -1,0 +1,851 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIT Indore</title>
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-3.3.1.js"></script> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+  <style type="text/css">
+  		@media only screen and (max-width: 1000px) and (min-width: 400px) {
+  			html,body
+  			{
+  				width:415%;
+  			}
+  		}
+      	@import url(https://fonts.googleapis.com/css?family=Exo:100);
+      	* {margin: 0; padding: 0; border: 0 none;}
+      	body {height: 100%; width: 100%;}
+      	.cont-slider 
+      	{
+          	position: relative;
+          	height: 110vh;
+          	max-height: 110vh;
+          	width: 100%;
+          	min-width: 95%;
+          	margin: 0 auto;
+          	overflow: hidden;
+      	}
+      	.slider 
+      	{
+          	animation: sliding 25s ease-out 0s backwards infinite;
+          	position: absolute;
+          	left: 0;
+          	top: 0;
+          	width: 500%;
+          	height: 100%;
+      	}
+      .slide 
+      	{
+          	display: inline-block;
+          	position: relative;
+          	width: 20%;
+          	height: 100%;    
+          	background-attachment: fixed;
+          	background-position: center center;
+      	    background-size: cover;
+      	}
+      	.slide span 
+      	{
+          	background: rgba(0, 0, 0, 0.3);
+          	border-radius: 0 5vh 5vh 0;
+          	color: #FFF;
+          	position: absolute;
+          	left: 0;
+          	top: 40vh;
+          	font-size: 1rem; font-family: 'Exo', sans-serif; font-weight: 100;
+          	font-size: 6vh;
+          	line-height: 20vh;
+          	border: 1px solid rgba(255,255,255,.45);
+          	border-left: 0 none;
+      	}
+	    .one {
+	        background-image: url(http://www.iiti.ac.in/images/ledwall/therank1.png);}
+	    .two {
+	        background-image: url(Images/new2.jpg);}
+	    .three {
+	        background-image: url(https://qph.fs.quoracdn.net/main-qimg-2d7f65e6c397772324432f2b4c95ab8b);}
+	    .four {
+	        background-image: url(http://eateries.iiti.ac.in/images/slider/DLMS2813.jpg);}
+	    .five {
+	        background-image: url(http://people.iiti.ac.in/~hostel/img/6.jpg);}
+	      
+
+	    @keyframes sliding 
+	    {
+	        0% {left: 0%; }
+	        15% {left: 0%; }
+	        20% {left: -100%; }
+	        35% {left: -100%; }
+	        40% {left: -200%; }  
+	        55% {left: -200%; }
+	        60% {left: -300%; }
+	        75% {left: -300%; }
+	        80% {left: -400%; }
+	        95% {left: -400%; }   
+	        100% {left: 0; }
+      	}
+	    #iitindore
+	    {
+	      font-family: 'Exo', sans-serif; 
+	      margin-top: 0px;
+	      font-size: 225%;
+	      font-weight: 900;
+	      color: white;
+	      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 7px 7px 7px #000000;
+	      float: left;
+	      padding-left: 25px;
+	    }
+	    #BPSI
+	    {
+	      margin-top: 0px;
+	      font-size: 190%;
+	      font-weight: 600;
+	      color: white;
+	      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 7px 7px 7px #000000;
+	      float: left;
+	      padding-left: 25px;
+	    }
+	    .logo-symbol
+	    {
+	      float:left;
+	      width:95px;
+	      margin-left: 5px;
+	      margin-bottom: 20px;
+	      border-radius: 30%;
+	      box-shadow: 10px 8px 10px ;
+	    }
+	    .logo-name
+	    {
+	      float:left;
+	    }
+	    #NB
+	    {
+	      clear: both;
+	    }
+	    #NB a:hover
+	    {
+	      color: white;
+	      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 7px 7px 7px #000000;
+	    }
+	    .dropdown-menu a:hover
+	    {
+	      font-weight: 700;
+	    }
+	    .right-navbar
+	    {
+	      float:right;
+	      margin-top: 0px;
+	    }
+	    .right-navbar a:hover
+	    {
+	      font-weight: 700;
+	      color: white;
+	      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 5px 5px 5px #000000;
+	    }
+	    .top-header
+	    {
+	      padding-top: 0px;
+	      margin-top: 5px;
+	    }
+		.dropdown 
+		{
+		  position: relative;
+		  display: inline-block;
+		}
+		  /* Dropdown Button */
+		.dropbtn 
+		{
+		  color: white;
+		  border: none;
+		}
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content 
+		{
+		  display: none;
+		  position: absolute;
+		  min-width: 160px;
+		}
+		.navbar
+		{
+		  padding-top: 2px;
+		  padding-bottom: 2px;
+		}
+		/* Links inside the dropdown */
+		.dropdown-content a 
+		{
+		  color: black;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+		#home:hover
+		{
+			color:white;
+		}
+	  	.nav-link
+	  	{
+	    	padding-bottom: 10px;
+	  	}
+	  .News-box img
+        {
+            width:98%;
+            height: 127px;
+            
+        }
+        .News-box
+        {
+            width:200px;
+            float:left;
+            margin-right: 45px;
+            border: solid grey;
+            border-width: 2px;
+            height:255px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size:90%;
+            box-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF, 10px 10px 10px #000000;
+            background-color: lightgrey;
+            margin-bottom: 50px;
+        }
+        .News
+        {
+            text-align: center;
+            font-family: sans-serif;
+            color: grey;
+            font-weight: 300%;
+            position:relative;
+            left:0;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: 5px solid #EE82EE;
+            border-bottom: 5px solid #EE82EE;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-top: 5px;
+            width: 95.5%;
+        }
+        .w3-content
+        {
+            width:100%;
+            margin-left: 15%;
+        }
+        .icons-box
+        {
+            border:3px solid grey;
+            float: left;
+            margin-right: 70px;
+            width:230px;
+            font-size: 100%;
+            border-radius: 25px;
+
+        }
+        .icons-container
+        {
+            align-content: center;
+            padding-left: 50px;
+           
+        }
+        .icons a:hover
+        {
+            color: blue;
+        }
+        .icons-box:hover
+        {
+            background-color: pink;
+        }
+        .tab_content {
+            padding: 20px;
+            font-size: 0.7em;
+            background-color: lightgrey;
+        }
+        .tab_content h2 {
+            font-weight: normal;
+            padding-bottom: 10px;
+            font-size: 1.0em;
+        }
+        .tab_content h3 a{
+            color: #254588;
+        }
+        .tab_content img {
+            float: left;
+            margin: 0 20px 20px 0;
+            padding: 5px;
+        }
+        .tab_content ul li
+        {
+            padding-bottom: 5px;
+        }
+        .navbar-nav li
+        {
+          padding-right: 9px;
+        }
+        .Department-box img
+        {
+            width:100%;
+            height: 150px;
+            border-radius: 30px;
+            
+        }
+        .Department-box
+        {
+            width:15.1%;
+            float:left;
+            margin-right: 20px;
+            border: solid grey;
+            border-width: 2px;
+            height:220px;
+            text-align: center;
+            font-family: sans-serif;
+            box-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF, 10px 10px 10px #000000;
+            background-color: lightgrey;
+            border-radius: 30px;
+        }
+        .Department-box h4
+        {
+          text-shadow: 0 0 2px #FF0000, 0 0 2px #0000FF, 4px 4px 4px #000000;
+          color: white;
+        }
+        a{
+          text-decoration: none;
+        }
+        .Department-box h4 a:hover
+        {
+          text-decoration: underline;
+          color: white;
+        }
+        .department-container
+        {
+          clear:both;
+          width:100%;
+          margin-top: -70px;
+          padding-bottom: 300px;
+        }
+        .bot
+        {
+        	clear: both;
+        }
+    	.bot-item img
+        {
+            width:60%;
+            height: 150px;
+            border-radius: 30px;
+            
+        }
+        .bot-item
+        {
+            width:50%;
+            float:left;
+            /*margin-right: 20px;*/
+            border: solid grey;
+            border-width: 2px;
+            /*height:220px;*/
+            text-align: center;
+            font-family: sans-serif;
+            /*box-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF, 10px 10px 10px #000000;*/
+            background-color: #E8E8E8;
+            margin-bottom: 100px;
+        }
+        .bot h2
+        {
+          	text-shadow: 1px 1px 1px black;
+          	color: green;
+          	border: 2px solid grey;
+          	border-radius: 10px;;
+          	width:500px;
+          	text-align: center;
+
+        }
+        .bot h2 a
+        {
+          	text-decoration: none;
+          	font-size: 120%;
+        }
+
+        .bot h2 a:hover
+        {
+          	color: white;
+      		text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF, 7px 7px 7px #000000;
+      		font-weight: 500;
+        }
+        .footer
+        {
+          	width:75%;
+          	margin-left: 12.5%;
+          	padding-bottom: 1px;
+        }
+        .footer-item
+        {
+            width:33%;
+            float:left;
+            /*margin-right: 20px;*/
+            border: 2px solid grey;
+            border-radius: 150px;
+            margin-bottom: 15px;
+            height:200px;
+            text-align: center;
+            font-family: sans-serif;
+            /*box-shadow: 0 0 5px #FF0000, 0 0 7px #0000FF, 10px 10px 10px #000000;*/
+            background-color: #A9A9A9;
+        }
+        .footer-item ul
+        {
+          list-style: none;
+          padding-left: 0;
+        }
+        .footer-item h4
+        {
+          width: 75%;
+          margin-left: 12.5%;
+          border-bottom: 2px solid white;
+        }
+        .footer-item a:hover img
+        {
+        	border: 2px solid black;
+        }
+  </style>
+</head>
+<body>
+    <div class="top-header">
+        <div class="logo-symbol">
+            <img src="Images/iitilogo.png" width=90" height="90" style="padding-left: 5px;">
+        </div>
+        <div class="logo-name">
+            <h1 id="iitindore">Indian Institute of Technology Indore</h1>
+            <br>
+            <h1 id="BPSI">भारतीय प्रौद्योगिकी संस्थान इंदौर</h1>
+        </div>
+        <div class="right-navbar">
+            <div class="navbar navbar-expand-md navbar-dark bg-danger">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Webmail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Student'sLife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">RTI</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-top: 10px; vertical-align: middle;">
+                <img src="Images/google.png" width="25" height="25" style="clear:both; float: left; margin-top: 2px;">
+                <form>
+                    <input type="text" name="textbox" placeholder="Google custom search" style="margin-left:5px; ">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger sticky-top" id="NB">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapse_target">
+                <ul class="navbar-nav">
+                	  <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" href="#" data-toggle="dropdown" data-target="dropdown_target">Academics
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown_target">
+                                 <a href="#" class="dropdown-item">Academics</a>
+                                 <a href="#" class="dropdown-item">School of Engineering</a>
+                                  <a href="#" class="dropdown-item">School of Science</a>
+                                  <a href="#" class="dropdown-item">School of Humanities and Social Sciences</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" href="#" data-toggle="dropdown" data-target="dropdown_target">Research
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown_target">
+                                 <a href="#" class="dropdown-item">Collaborations</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link " href="#" data-toggle="dropdown" data-target="dropdown_target">People
+                                
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link " href="#" data-toggle="dropdown" data-target="dropdown_target">Administration
+                                
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" href="#" data-toggle="dropdown" data-target="dropdown_target">Achievements
+                                
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown_target">
+                                  <a href="#" class="dropdown-item">Placements</a>
+                                  <a href="#" class="dropdown-item">Publications</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" href="#" data-toggle="dropdown" data-target="dropdown_target">Facilities
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown_target">
+                                  <a href="#" class="dropdown-item">Library</a>
+                                  <a href="#" class="dropdown-item">SIC-A National Facility</a>
+                                  <a href="#" class="dropdown-item">Centrall Workshop</a>
+                                  <a href="#" class="dropdown-item">Medical Clinic</a>
+                                  <a href="#" class="dropdown-item">IITI ePayments</a>
+                                  <a href="#" class="dropdown-item">Hall of Residence</a>
+                                  <a href="#" class="dropdown-item">Eateries</a>
+                                  <a href="#" class="dropdown-item">HRMS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle dropbtn" href="#" data-toggle="dropdown" data-target="dropdown_target">Tender
+                                <span class="caret"></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown_target">
+                                 <a href="#" class="dropdown-item">Estate Section</a>
+                                  <a href="#" class="dropdown-item">Material Management Section</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" data-target="dropdown_target">Campus Safety
+                                
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link " href="#" data-toggle="dropdown" data-target="dropdown_target">International
+                                
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" data-target="dropdown_target">Forum
+                                
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#">PhotoGallery
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown">
+                            <a class="nav-link" href="#" data-toggle="dropdown" data-target="dropdown_target">Contact
+                                
+                            </a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="cont-slider">
+    <section class="slider">
+        <article class="slide one"><span>IIT Indore debuts with a rank of 2nd amongst Indian Institutes</span></article><!--
+      --><article class="slide two"><span>IIT Indore Signs MoU with Oregon State University, USA</span></article><!--
+      --><article class="slide three"><span>APJ Abdul Kalam Hall of Residence</span></article><!--
+      --><article class="slide four"><span>In the Campus @teapost</span></article><!--
+      --><article class="slide five"><span>@SHIRU CAFE</span></article>
+    </section>
+    </div>
+  	<div class="w3-content w3-display-container">
+  		<div class="News"><a href="#"><h1>News</h1></a>
+  		</div>
+  		<div class="mySlides">
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/ledwall/therank2.png">
+                <h4>World Rank 351-400</h4>
+                <p>IIT Indore debuts with a world rank of 351-400</p>
+            </div>
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/outreach1.jpg">
+                <h4>Adoption of Government School</h4>
+                <p>IITI adopts a govt. school at Simrol as a part of its outreach programme</p>
+            </div>
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/unnat.jpg">
+                <h4>Unnat Bharat Abhiyan</h4>
+                <p>IITI launches a social development program - Unnat Bharat Abhiyan</p>
+            </div>
+                    <div class="News-box">
+                <img src="http://sites.ieee.org/ants-2018/files/2018/02/ieee-ants.png">
+                <h4>IEEE ANTS</h4>
+                <p>IIT Indore successfully hosts 12th IEEE ANTS 2018.</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="News-box">
+                <img src="Images/RashtriyaAvishkaarAbhiyan.png">
+                <h4>Rashtriya Avishkar Abhiyan</h4>
+                <p>Rashtriya Avishkar Abhiyan activities of IIT Indore</p>
+            </div>
+            
+            <div class="News-box">
+                <img src="Images/5G.png">
+                <h4>5G Test Bed Development</h4>
+                <p>IIT Indore joins pan-IIT 5G Test Bed Development</p>
+            </div>
+        
+            
+                <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/robot.jpg">
+                <h4>Korea Robotics Society award</h4>
+                <p>Dr. Santhakumar gets young scientist award from Korea Robotics Society</p>
+            </div>
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/insa.jpg">
+                <h4>INSA Young Scientist Award</h4>
+                <p>Dr. Rajneesh Mishra gets INSA Young Scientist Award</p>
+            </div>
+        </div>
+        <div class="mySlides">
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/astro.jpg">
+                <h4>SKA-India Consortium</h4>
+                <p>IIT Indore joins the SKA-India Consortium as a founding member</p>
+            </div>
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/smartcard.jpg">
+                <h4>Smart Card Facility</h4>
+                <p>IIT Indore upgrades to Smart Cards</p>
+            </div>
+        
+            <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/Paytm-AV.jpg">
+                <h4>PAY THROUGH PAYTM</h4>
+                <p>IIT Indore has entered to using payment through paytm portal</p>
+            </div>
+                <div class="News-box">
+                <img src="http://www.iiti.ac.in/images/robot.jpg">
+                <p>Dr. Anirban Sengupta, Associate Professor in CSE, appointed as Deputy Editor-in-Chief (D-EiC) of IET Computers and Digital Techniques Journal w.e.f Dec 2018.</p>
+            </div>
+        </div>
+  		<button class="w3-button w3-black w3-display-left" style="margin-left: -60px; margin-top: 165px;" onclick="plusDivs(-1)">&#10094;</button>
+  		<button class="w3-button w3-black w3-display-right" style="margin-right: -25px; margin-top: 165px;" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	<div class="icons-container w3-content" style="margin-bottom: 80px;">
+        <div class="icons">
+            <a href="#">
+            <div class="icons-box">
+                <img src="http://www.iiti.ac.in/images/etc.png" style="float: left; border: 1px solid pink; margin-top: 2px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:100%;">RESEARCH AREAS</h3>
+            </div>
+            </a>
+            <a href="#">
+            <div class="icons-box">
+                <img src="http://www.iiti.ac.in/images/student.png" style="float: left; border: 1px solid pink; margin-top:2px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:100%;">PROSPECTIVE STUDENTS</h3>
+            </div>
+            </a>
+            <a href="#">
+            <div class="icons-box">
+                <img src="http://www.iiti.ac.in/images/gr.png" style="float: left; border: 1px solid pink; margin-top: 2px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:100%;">CONVOCATION-2018</h3>
+            </div>
+            </a>
+        </div>
+        <div class="icons" style="clear: both; padding-top: 20px;">
+            <a href="#">
+            <div class="icons-box">
+                <img src="http://www.iiti.ac.in/images/alumin.png" style="float: left; border: 1px solid pink; margin-top: 2px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:100%;">ALUMNI</h3>
+            </div>
+            </a>
+            <a href="#">
+            <div class="icons-box" style="height: 46px;">
+                <img src="http://www.iiti.ac.in/images/bsbe.png" style="float: left; border: 1px solid pink; margin-top: 2px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:90%;">CONFOCAL</h3>
+                <h3 style="font-size:80%; font-weight: 500;">MICROSCOPY FACILITY</h3>
+            </div>
+            </a>
+            <a href="#">
+            <div class="icons-box">
+                <img src="http://www.iiti.ac.in/images/grievance.jpg" style="float: left; border: 1px solid pink; margin-top: 4px; margin-right: 5px; margin-left:10px;">
+                <h3 style="float: left; padding-right: 5px; font-size:100%;">GRIEVANCE CELL</h3>
+            </div>
+            </a>
+        </div>
+    </div>
+  	<div class="tab_container" style="border: solid grey thin; margin-bottom: 500px; ">
+        <div class="events" style=" border: solid grey thin;">
+            <div  class="tab_content" style="float: left;  width:37%; ">
+                <h2 style="font-size: 200%;"><a href="#">Events</a></h2>
+                    <ul>
+                        <li><a href="http://www.iiti.ac.in/vdat2019/"><font color="black">23rd International Symposium On VLSI Design And Test (VDAT-2019) on July 4-6, 2019</font></a></li>
+                        <li><a href="https://indico.cern.ch/event/760884/"><font color="black">"Third Heavy Flavour Meet-2019" during 18-20th March 2019.</font></a></li>
+                        <li><a href="docs/downloads/Poster-Public Lecture.pdf"><font color="black">Public Lecture by Professor M. S. Raghunathan, FRS.</font></a></li>
+			            <li><a href="docs/downloads/events/1-Brochure &amp; schedule TEQIP short course MEMS-Jan 2019-rev.pdf"><font color="black">TEQIP Sponsored Short-Term Course on Advanced Materials and Processing</font></a></li>
+			            <li><a href="docs/downloads/events/Brochure-v2_TEQIP-Course_MEMS-IITI_Feb2018.pdf"><font color="black">TEQIP Sponsored Short-Term Course on Industrial Metallurgy and Quality Control</font></a></li>
+                        <li><a href="http://astronomy.iiti.ac.in/khagol_mela.html"><font color="black">Bapu Khagol Mela at IIT Indore on December 3, 02.00 - 07.30 PM</font></a></li>
+                        <li><a href="docs/downloads/events/Condition Monitoring.pdf"><strong>TEQIP-III Sponsored Short Term Course on Research and Development in Condition Monitoring of Rotating Machines (10-12 December 2018)</strong></a></li>
+                        <li><a href="docs/downloads/events/IAC_final.pdf"><strong>IAC 2018 | November 20th, 2018</strong></a></li>
+                        <li>Second International Yoga Day Celebration at IIT Indore <a href="yoga_day/2nd/index.html"><b>Visit Gallery</b></a></li>
+                        <li><a href="Images/DrAKN.jpg"><strong>Annual Public Lecture by Dr. Anil Kakodkar | August 24th, 2018</strong></a></li>
+                        <li><a href="http://ants2018.ieee-comsoc-ants.org/"><strong>IEEE International Conference on Advanced Networks and Telecommunications Systems 2018</strong></a></li>
+                    </ul>
+            </div>
+            <div  class="tab_content" style="float: left; width: 39%; padding-top: 55px;">
+                    <ul>
+                        <li><font color="black"><strong><a href="docs/downloads/courses/Artificial Intelligence and Advanced Signal Processing Techniques.pdf">A SHORT TERM COURSE ON Artificial Intelligence and Advanced Signal Processing Techniques for Engineering Applications (05-07 October 2018)</a></strong></font> </li>
+                        <li><font color="black"><strong><a href="vigyan_jyoti/">Vigyan Jyoti programme for bright school-girls</a></strong></font> </li>
+                        <li><strong><a href="http://www.iiti.ac.in/sic/index.php?q=opportunities"><font color="black">Initiatives for school girls</font></a></strong></li>
+                        <li><strong><a href="http://www.iiti.ac.in/sic/index.php?q=opportunities"><font color="black">Opportunities for school Children</font></a></strong></li>
+                        <li><font color="black"><strong>Team AVANA, IIT Indore has successfully organized an orphanage Visit. </strong> <a href="Images/avana/9K6A0177.JPG">PIC-1</a> | <a href="Images/avana/9K6A0194.JPG">PIC-2</a> | <a href="Images/avana/9K6A0359.JPG">PIC-3</a> | <a href="Images/avana/DSC09315.JPG">PIC-4</a> | <a href="Images/avana/DSC09322.JPG">PIC-5</a></font></li>
+                        <li><font color="black"><strong><a href="http://cmna.iiti.ac.in/">International Conference on Computational Mathematics in Nanoelectronics and Astrophysics during November 1-3, 2018.</a></strong></font></li>
+                        <li><a href="http://www.iiti.ac.in/smartcards">IIT Indore upgrades to Smart Cards</a></li>
+                        <li><a href="http://www.iiti.ac.in/Courses/index.htm">Continuing Education Programme</a></li>
+                        <li><a href="http://www.iiti.ac.in/Conferences_Workshops/index.htm">Conferences &amp; Workshops</a></li>
+                        <li><a href="http://www.iiti.ac.in/Seminars/index.html"> Institute Seminar Series</a></li>
+                        <li><a href="http://www.iiti.ac.in/Seminars/boundaries_colloquium.html">Institute Boundaries Series</a></li>
+                        <li><a href="http://iiti.ac.in/News/news.php" target="_blank">More News ...</a></li>
+                    </ul>
+            </div>
+        </div>
+		<div class="tab_content" style="float: left; width: 24%; border: solid grey thin;">
+            <h2 style="font-size: 200%;"><a href="#">Recruitments</a></h2>
+				<ul>
+                    <li><a href="http://www.iiti.ac.in/Careers/careers.php">Faculty Appointments</a><font class="ws8"><b> <span class="blink_me" style="color: red; display: inline; opacity: 0.728559;">New</span></b></font></li>
+                    <li><a href="http://www.iiti.ac.in/Careers/postdoc.php">Post Doctoral Fellowships</a></li>
+                    <li><a href="http://www.iiti.ac.in/Careers/ra.php">Research Associate Positions</a></li>
+                    <li><a href="http://www.iiti.ac.in/Careers/srf_jrf.php">JRF/SRF Positions</a></li>
+                    <li><a href="http://www.iiti.ac.in/Careers/careers.php">Non Teaching Recruitment</a><font class="ws8"><b> <span class="blink_me" style="color: red; display: inline; opacity: 0.728559;">New</span></b></font> </li>
+                    <li><a href="http://www.iiti.ac.in/Careers/careers.php">Walk-In Interview</a></li>
+                    <li><a href="http://iiti.ac.in/Careers/docs/april2018/Ramanujan&amp;Inspire-Final.pdf">Openings for Ramanujan Fellow/ DST-INSPIRE Faculty in Discipline of Mathematics, IIT Indore  </a></li>
+                    <li><a href="http://iiti.ac.in/docs/downloads/Ramanujan_Ramalingaswami_and_DST_Inspire_Fellows.pdf">Nomination of Ramanujan or Selection of Ramanujan, Ramlingaswami and DST Inspire Faculty Fellows at IIT Indore</a></li>
+                    <li><a href="http://www.iiti.ac.in/Careers/docs/project staff_UAY 12july2017.pdf">Recruitment of  project staff under UAY project.</a><font class="ws8"><b> <span class="blink_me" style="color: red; display: inline; opacity: 0.728559;">New</span></b></font></li>
+                    <li><a href="http://www.iiti.ac.in/docs/downloads/Call%20for%20Industry%20Partners%20for%20Prime%20Minister%20Fellowship%20Scheme.pdf">Call for Industry Partners for Prime Minister's Fellowship Scheme.</a></li>
+                </ul>
+        </div>
+    </div>
+    <div class="department-container">
+            <div class="Department-box" style="margin-left: 6px;">
+                <img src="Images/center of industry relations.jpg">
+                <h4><a href="#" >Center of Industry Relations</a></h4>
+            </div>
+            <div class="Department-box">
+                <img src="http://www.iiti.ac.in/images/Academic%20pods%201.jpg">
+                <h4><a href="#" >Quality Improvement Programme Center</a></h4>
+            </div>
+            <div class="Department-box">
+                <img src="Images/school building.jpg">
+                <h4><a href="#" >Academic Departments</a></h4>
+            </div>
+            <div class="Department-box">
+                <img src="Images/SIC.jpg">
+                <h4><a href="#" >SIC-A National Facility</a></h4>
+            </div>
+            <div class="Department-box">
+                <img src="Images/BSBE.jpg">
+                <h4><a href="#" >BSBE IIT Indore</a></h4>
+            </div>
+            <div class="Department-box">
+                <img src="http://www.iiti.ac.in/images/CIE.jpg">
+                <h4><a href="#" >CIE IIT Indore</a></h4>
+            </div>
+    </div>
+    <div class="bot">
+        <h2><a href="#">Research Highlights</a></h2>
+            <div class="bot-item">
+                <img src="http://www.iiti.ac.in/rh/images/mems_jan2019.JPG">
+                <h4>Metallurgy Engineering and Materials Science</h4>
+                <p>
+                  Wear is the most common reason for the mechanical failure of the engineering components. It involves many complex surface interactions. Such interactions are mechanical as well as a chemical in nature. Wear and friction are interlinked phenomena. Elimination of wear is a difficult task. However, it can be minimised using the appropriate surface modifications and coating technologies. In duplex surface treatments, a surface modification technique is combined with the coatings to achieve the optimum tribological properties. Under a given condition, wear behavior is dependent on the combination of surface engineering methods that are applied to the contacting surfaces.
+                </p>
+            </div>
+            <div class="bot-item">
+                <img src="http://www.iiti.ac.in/rh/images/math_rh_dec_18.png">
+                <h4>Discipline of MATHEMATICS</h4>
+                <p>
+                  We focus on computing areas of regions in the complex plane that are Images of subdisks of the unit disk under certain type of analytic functions. In general, though image domains are sometimes unbounded trivially with infinite areas, surprisingly, it is proved in the literature that areas of regions under certain analytic functions of the special type z/f are always bounded. Functions f which we take into account of our investigation are the members from the family of starlike functions, convex functions, their generalisations, and univalent functions in the unit disk with quasiconformal extension to the whole complex plane.
+                </p>
+            </div>
+    </div>  
+    <div class="footer" style="clear: both;">
+        <div class="footer-item">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Act</a></li>
+                <li><a href="#">Board of Governers</a></li>
+                <li><a href="#">List of Holidays-2018</a></li>
+                <li><a href="#">NIRF</a></li>
+                <li><a href="#">Schedule of Institute Buses</a></li>
+                <li><a href="#">Download Forms</a></li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <h4>Address</h4>
+            <p>
+            	Indian Institute of Technology Indore, Khandwa Road, Simrol<br>
+                Indore 453552<br>
+                India<br>
+                Tel: +91-7324-306717<br>
+                Tel: +91-731-2438717
+            </p>
+        </div>
+        <div class="footer-item">
+            <h4>Social Media</h4>
+            <a href="#"><img src="Images/facebook icon.png" width="100" height="100" style="border-radius:30px;"></a>
+            <a href="#"><img src="Images/twitter icon.png" width="100" height="100" style="border-radius:30px;"></a>
+        </div>
+        <div class="copyright" style="text-align: center; clear: both;">
+          <p>Copyright © 2014 Indian Institute of Technology Indore. All Rights Reserved.</p>
+        </div>
+    </div>
+    <script>
+    	var slideIndex = 1;
+    	showDivs(slideIndex);
+
+    	function plusDivs(n) 
+		{
+      		showDivs(slideIndex += n);
+    	}
+    	function showDivs(n) 
+    	{
+      		var i;
+      		var x = document.getElementsByClassName("mySlides");
+      		if (n > x.length) {slideIndex = 1}
+      		if (n < 1) {slideIndex = x.length}
+      		for (i = 0; i < x.length; i++) 
+      		{
+        		x[i].style.display = "none";  
+      		}
+      		x[slideIndex-1].style.display = "block";  
+    	}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
